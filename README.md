@@ -12,8 +12,8 @@ Its integrated with the OpenWeatherMap API to retrieve the real-time weather dat
 
 ## Screenshots
 
-![Screenshot 1](dash2.png)
-![Screenshot 2](dash1.png)
+![Screenshot 1](dash2.PNG)
+![Screenshot 2](dash1.PNG)
 
 ## Setup
 
