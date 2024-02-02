@@ -1,0 +1,45 @@
+<!-- templates/weather.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="banner-top">
+        <h3>Checking you current local weather</h3>
+    </div>
+
+    <div class="container">
+        <h1>Current Weather</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% else %}
+            <div id="weatherData">
+                
+                <h2>{{ city }},{{ country }}</h2>
+                <p>sky: {{ description }}  📖</p>
+                <p>Temperature: {{ temperature }}°C  🌡️</p>
+                <p>temperature feels: {{temperature_feels}}°C  🌡️</p>
+                <p>temperature max: {{temperature_max}}°C  🌡️</p>
+                <p>temperature min: {{temperature_min}}°C  🌡️</p>
+                <p>Humidity: {{ humidity }}%  💧</p>
+                <p>wind gust: {{ wind_gust }}  💨</p>
+                <p>Wind Speed: {{ wind_speed }}  🌫️</p>
+                <p>Wind Direction: {{ wind_direction }}  🧭</p>
+
+            </div>
+        {% endif %}
+        <a href="/">
+        <button class="back-button">Go Back</button>
+        </a>
+    </div>
+
+    <div class="banner-bottom">
+        <h3>Made with ❤️ by Birdo</h3>
+        <h3 class="banner-uk">Uk Only</h3>
+    </div>
+</body>
+</html>
