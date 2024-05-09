@@ -13,7 +13,6 @@ Its integrated with the OpenWeatherMap API to retrieve the real-time weather dat
 ## Screenshots
 
 ![Screenshot 1](dash2.PNG)
-![Screenshot 2](dash1.PNG)
 
 ## Setup
 
@@ -27,6 +26,10 @@ Install Dependencies:
   ```
   pip install -r requirements.txt
   ```
+
+
+![Screenshot 2](dash1.PNG)
+
 
 2. **Obtain OpenWeatherMap API Key:**
 
