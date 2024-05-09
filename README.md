@@ -19,15 +19,16 @@ Its integrated with the OpenWeatherMap API to retrieve the real-time weather dat
 
 1. **Clone the Repository:**
 
-   ```
-   git clone https://github.com/your_username/weather-dashboard.git
-   ```
-  Install Dependencies:
+  ```
+  git clone https://github.com/your_username/weather-dashboard.git
+  ```
+Install Dependencies:
+
   ```
   pip install -r requirements.txt
   ```
 
-2.**Obtain OpenWeatherMap API Key:**
+2. **Obtain OpenWeatherMap API Key:**
 
 To Obtain an API key from OpenWeatherMap you just need to register an account.
 
@@ -39,14 +40,17 @@ When you Obtain an API key from OpenWeatherMap or Another Api
 replace the string 'Your_WeatherMap_Api_Key' in app.py with your actual API key.
 
 3. **Run the Application:**
+
   ```
   python app.py
   ```
+
 4. **Access the Application:**
 
 Open your web browser and navigate to 
- ```http://localhost:5000. ```
+```http://localhost:5000. ```
 
-Usage
-Just enter the postcode of a desired location in the input field and you
-will retrieve weather data from the location.
+For Usage : 
+Just enter the postcode of a desired location in the input field and 
+you will retrieve the weather data from that desired location, it will 
+display the retrieved data on the localhost webpage.
