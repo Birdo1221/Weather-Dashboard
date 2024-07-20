@@ -13,7 +13,7 @@ Its integrated with the OpenWeatherMap API to retrieve the real-time weather dat
 ## live Demo
 
 There is a live demo of this on my site
-[Birdo.ovh]([https://pages.github.com/](https://www.weather.birdo.ovh/))
+[Birdo](https://www.weather.birdo.ovh/)
 
 ## Screenshots
 
