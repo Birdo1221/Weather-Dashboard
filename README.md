@@ -10,6 +10,11 @@ Its integrated with the OpenWeatherMap API to retrieve the real-time weather dat
 - **Detailed Weather Information**: Display temperature, humidity, pressure, wind speed, wind direction, and more.
 - **Responsive Design**: Accessible on various devices and screen sizes.
 
+## live Demo
+
+There is a live demo of this on my site
+[Birdo.ovh]([https://pages.github.com/](https://www.weather.birdo.ovh/))
+
 ## Screenshots
 
 ![Screenshot 1](dash2.PNG)
