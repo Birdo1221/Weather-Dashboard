@@ -24,4 +24,4 @@ This Weather App provides real-time weather updates for any location using the O
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/weather-app.git
+   git clone https://github.com/Birdo1221/Weather-Dashboard.git
