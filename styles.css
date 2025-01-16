@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  overflow :hidden;
+  background-color: #222222;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+  background: linear-gradient(-100deg,
+  #283048 0%,
+  #253b7d 20%,
+  #283048 40%,
+  #374e91 60%,
+  #283048 80%,
+  #4a5883 100%);
+  animation: gradient-animation 6s linear infinite;
+  background-size: 400% 400%; 
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 10% 10%;
+  }
+  20% {
+    background-position: 20% 20%;
+  }
+  25% {
+    background-position: 30% 30%;
+  }
+  35% {
+    background-position: 40% 40%;
+  }
+  40% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 60% 60%;
+  }
+  65% {
+    background-position: 70% 70%;
+  }
+  75% {
+    background-position: 80% 80%;
+  }
+  85% {
+    background-position: 90% 90%;
+  }
+  90% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.port-title{
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+.is-mobile .dropbtn {
+  background-color: transparent;
+  font-size: 14px; 
+  border-radius: 8px; 
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: none; 
+
+}
+.is-mobile .content {
+  background: linear-gradient(-100deg,
+        #283048 0%,
+        #253b7d 20%,
+        #283048 40%,
+        #374e91 60%,
+        #283048 80%,
+        #4a5883 100%);
+}
+} 
+
+nav {
+  z-index: 2;
+  background-color: rgb(15, 16, 17);
+  text-align: center;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  opacity: 0.7; 
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 80px); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+footer {
+  background-color: rgb(15, 16, 17);
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+p {
+  font-size: 16px;
+  padding: 1px;
+}
+
+.abuse-banner {
+  position: absolute;
+  left: 30px; 
+  width: 200px; 
+  z-index: 3; 
+  filter: invert(90%);
+  cursor: pointer;
+}
+
+.abuse-banner:hover {
+  color: white;
+  opacity: 0.7; 
+}
+
+
+.center-box, .center-box2 {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid black;
+  background: linear-gradient(0deg, #283048 0%, #253b7d 20%, #283048 40%, #2b375c 60%, #283048 80%, #4a5883 100%); 
+  padding: 2rem;
+  margin-top: -40%;
+}
+
+
+.pfp {
+  position: absolute;
+  top: 25px; 
+  right: 30px; 
+  width: 60px;
+  border-radius: 60%; 
+  border: 2px solid #fff;
+  z-index: 3;
+}
+
+.pfp:hover {
+  opacity: 0.7; 
+}
+
+
+.project-box {
+  width: 280px;
+  border: 2px solid #00000000;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  animation: projectAnimation 0.5s ease-in-out forwards;
+}
+
+.project-box h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.project-box p {
+  font-size: 16px;
+}
+
+.Pre-button, .Next-button, .switch-buttons .back-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.back-button:active {
+  background-color: #a01111bb;
+}
+
+.gitrepo-button {
+  display: inline-block;
+  padding: 8px;
+  background-color: #4f00be;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gitrepo-button:hover {
+  background-color: #2d006d;
+}
+
+.gitrepo-button:active {
+  background-color: #1f004b;
+}
+
+.back-button {
+  font-size: 16px;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 14px;
+}
+
+.back-button:hover {
+  background-color: #0033cc;
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+  animation: changeColorhover 3.6s ease-in-out infinite;
+}
+.dropbtn:active {
+  text-decoration: underline;
+  animation: changeColorhover 3.6s ease-in-out infinite;
+}
+
+@keyframes changeColorhover {
+  0%, 100% {
+      color: #1e3a5f; 
+  }
+  25%, 75% {
+      color: #5085a5;
+  }
+  50% {
+      color: #104e8b;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(255, 255, 255);
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropbtn:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+section {
+  margin-bottom: -60px;
+}
+
+@media screen and (max-width: 780px) {
+  .pfp, .abuse-banner {
+    display: none;
+  }
+  .center-box2 {
+    display: none;
+  }
+}
